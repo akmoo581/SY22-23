@@ -23,8 +23,6 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.monkeybutton1 = New System.Windows.Forms.Button()
-        Me.displaypicturebox = New System.Windows.Forms.PictureBox()
-        Me.monkeyPictureBox = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -33,36 +31,23 @@ Partial Class Form1
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
-        CType(Me.displaypicturebox, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.orangatanPictureBox = New System.Windows.Forms.PictureBox()
+        Me.monkeyPictureBox = New System.Windows.Forms.PictureBox()
+        Me.displaypicturebox = New System.Windows.Forms.PictureBox()
+        CType(Me.orangatanPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.monkeyPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.displaypicturebox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'monkeybutton1
         '
-        Me.monkeybutton1.Location = New System.Drawing.Point(144, 277)
+        Me.monkeybutton1.Location = New System.Drawing.Point(30, 330)
         Me.monkeybutton1.Name = "monkeybutton1"
         Me.monkeybutton1.Size = New System.Drawing.Size(75, 23)
         Me.monkeybutton1.TabIndex = 0
         Me.monkeybutton1.Text = "monkey"
         Me.monkeybutton1.UseVisualStyleBackColor = True
-        '
-        'displaypicturebox
-        '
-        Me.displaypicturebox.Location = New System.Drawing.Point(-1, 4)
-        Me.displaypicturebox.Name = "displaypicturebox"
-        Me.displaypicturebox.Size = New System.Drawing.Size(291, 227)
-        Me.displaypicturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.displaypicturebox.TabIndex = 1
-        Me.displaypicturebox.TabStop = False
-        '
-        'monkeyPictureBox
-        '
-        Me.monkeyPictureBox.Image = Global.monkeydex.My.Resources.Resources.download
-        Me.monkeyPictureBox.Location = New System.Drawing.Point(98, 315)
-        Me.monkeyPictureBox.Name = "monkeyPictureBox"
-        Me.monkeyPictureBox.Size = New System.Drawing.Size(225, 95)
-        Me.monkeyPictureBox.TabIndex = 2
-        Me.monkeyPictureBox.TabStop = False
         '
         'Label1
         '
@@ -105,42 +90,76 @@ Partial Class Form1
         Me.namelabel.AutoSize = True
         Me.namelabel.Location = New System.Drawing.Point(458, 35)
         Me.namelabel.Name = "namelabel"
-        Me.namelabel.Size = New System.Drawing.Size(41, 16)
+        Me.namelabel.Size = New System.Drawing.Size(0, 16)
         Me.namelabel.TabIndex = 7
-        Me.namelabel.Text = "name"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.Location = New System.Drawing.Point(458, 78)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(37, 16)
+        Me.Label6.Size = New System.Drawing.Size(0, 16)
         Me.Label6.TabIndex = 8
-        Me.Label6.Text = "Legs"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.Location = New System.Drawing.Point(458, 124)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(34, 16)
+        Me.Label7.Size = New System.Drawing.Size(0, 16)
         Me.Label7.TabIndex = 9
-        Me.Label7.Text = "food"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
         Me.Label8.Location = New System.Drawing.Point(450, 162)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(65, 16)
+        Me.Label8.Size = New System.Drawing.Size(0, 16)
         Me.Label8.TabIndex = 10
-        Me.Label8.Text = "predators"
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(160, 330)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 11
+        Me.Button2.Text = "oranagtange "
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'orangatanPictureBox
+        '
+        Me.orangatanPictureBox.Image = Global.monkeydex.My.Resources.Resources.Orang_Utan__Semenggok_Forest_Reserve__Sarawak__Borneo__Malaysia
+        Me.orangatanPictureBox.Location = New System.Drawing.Point(160, 388)
+        Me.orangatanPictureBox.Name = "orangatanPictureBox"
+        Me.orangatanPictureBox.Size = New System.Drawing.Size(100, 50)
+        Me.orangatanPictureBox.TabIndex = 12
+        Me.orangatanPictureBox.TabStop = False
+        '
+        'monkeyPictureBox
+        '
+        Me.monkeyPictureBox.Image = Global.monkeydex.My.Resources.Resources.download
+        Me.monkeyPictureBox.Location = New System.Drawing.Point(12, 371)
+        Me.monkeyPictureBox.Name = "monkeyPictureBox"
+        Me.monkeyPictureBox.Size = New System.Drawing.Size(102, 67)
+        Me.monkeyPictureBox.TabIndex = 2
+        Me.monkeyPictureBox.TabStop = False
+        '
+        'displaypicturebox
+        '
+        Me.displaypicturebox.Location = New System.Drawing.Point(-1, 4)
+        Me.displaypicturebox.Name = "displaypicturebox"
+        Me.displaypicturebox.Size = New System.Drawing.Size(291, 227)
+        Me.displaypicturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.displaypicturebox.TabIndex = 1
+        Me.displaypicturebox.TabStop = False
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.orangatanPictureBox)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
@@ -154,8 +173,9 @@ Partial Class Form1
         Me.Controls.Add(Me.monkeybutton1)
         Me.Name = "Form1"
         Me.Text = "Form1"
-        CType(Me.displaypicturebox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.orangatanPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.monkeyPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.displaypicturebox, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -172,4 +192,6 @@ Partial Class Form1
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
+    Friend WithEvents Button2 As Button
+    Friend WithEvents orangatanPictureBox As PictureBox
 End Class
