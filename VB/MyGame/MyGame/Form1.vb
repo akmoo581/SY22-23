@@ -41,33 +41,53 @@
         Select Case e.KeyCode
             Case Keys.W
                 direction = New Point(0, -Speed)
-                moveto(Player, 0, -Speed)
+                moveto(player, 0, -Speed)
             Case Keys.S
                 direction = New Point(0, Speed)
-                moveto(Player, 0, Speed)
+                moveto(player, 0, Speed)
             Case Keys.A
                 direction = New Point(-Speed, 0)
-                moveto(Player, -Speed, 0)
+                moveto(player, -Speed, 0)
             Case Keys.D
                 direction = New Point(Speed, 0)
-                moveto(Player, Speed, 0)
+                moveto(player, Speed, 0)
             Case Keys.Space
                 'Add a bullet in the direction the player is facing
-                AddAt(BulletPictureBox2, Player.Location, direction)
+                '  AddAt(BulletPictureBox2, Player.Location, direction)
         End Select
     End Sub
 
     'You can make items appear using a time
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
-        '   AddAt(BulletPictureBox2, New Point(0, 0), "CHASE")
-        'AddAt(BulletPictureBox2, New Point(10, 5), "FOLLOW")
-        AddAt(BulletPictureBox2, New Point(5, 15), "RANDOM")
+        Dim r As New Random
+        AddAt(p2, New Point(r.Next), "CHASE")
+        AddAt(P6, New Point(r.Next), "FOLLOW")
+        AddAt(P7, New Point(r.Next), "RANDOM")
+        AddAt(P4, New Point(r.Next), "RANDOM")
+        AddAt(P8, New Point(r.Next), "RANDOM")
+        AddAt(P3, New Point(r.Next), "CHASE")
+        AddAt(P10, New Point(r.Next), "CHASE")
+        AddAt(P5, New Point(r.Next), "CHASE")
+        AddAt(P9, New Point(r.Next), "FOLLOW")
     End Sub
 
 
     'Don't mess with the code below, this updates the game
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         UpdateGame()
+        moveto(p2, 0, -Speed)
+        moveto(P3, 0, -Speed)
+        moveto(P4, 0, -Speed)
+        moveto(P5, 0, -Speed)
+        moveto(P6, 0, -Speed)
+        moveto(P7, 0, -Speed)
+        moveto(P8, 0, -Speed)
+        moveto(P9, 0, -Speed)
+        moveto(P10, 0, -Speed)
     End Sub
-
+    Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Dim r As New Random
+        AddAt(P5, New Point(r.Next), New Point(100, 200))
+        AddAt(P5, New Point(64, 78), New Point(0, -10))
+    End Sub
 End Class
